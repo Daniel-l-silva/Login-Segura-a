@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="golde.css">
+    <title>Login - seguro Acesso</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row align-c justify-c vh-100">
+            <div class="col-login">
+                <div class="login-container">
+                    <div class="login-header text-c mb-3">
+                        <i class="fas fa-user-circle fs-2 text-gold"></i>
+                        <h4 class="mt-2 mb-1">Bem-vindo</h4>
+                        <p class="text-muted fs-sm mb-0">Faça login para continuar</p>
+                    </div>
+                    <form id="loginForm">
+                        <div class="mb-2">
+                            <label for="email" class="form-label fs-sm">Email</label>
+                            <input type="email" class="form-control form-control-sm" id="email" placeholder="E-mail ID"
+                                required />
+                        </div>
+                        <div class="mb-2">
+                            <label for="password" class="form-label fs-sm"> Senha </label>
+                            <input type="password" class="form-control from-control-sm" id="password"
+                                placeholder="Digite sua Senha" required />
+                        </div>
+                        <div class="mb-2 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label fs-sm">Salvar informações</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm w-100    mb-2">Entrar</button>
+                    </form>
+                    <div class="text-c mb-3">
+                        <a href="#" class="fs-sm text-decoration-none">Esqueci a Senha</a>
+                    </div>
+                    <hr class="my-2"/>
+                    <div class="text-c">
+                        <p class="text-muted fs-sm mb-2">Não tem uma conta? </p>
+                        <button class="btn btn-outline-primary btn-sm w-100" data-bs-toggle="collapse"
+                            data-bs-target="#signupForm">Inscrever-se</button>
+                    </div>
+                    <div class="Collapse mt-3" id="signupForm">
+                        <form id="signupCollapseForm">
+                            <div class="mb-2">
+                                <input type="text" class="form-control form-control-sm" placeholder="Seu Nome"
+                                    required />
+                            </div>
+                            <div class="mb-2">
+                                <input type="email" class="form-control form-control-sm" placeholder="Email" required />
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control form-control-sm " placeholder="Senha" required />
+                            </div>
+                            <div class="mb-2">
+                                <input type="password" class="form-control form-control-sm" placeholder="Confirmar Senha"
+                                    required />
+                            </div>
+                            <button type="submit" class="btn btn-success btn-sm w-100">Criar Conta</button>
+                        </form>
+                    </div>
+                    <div class="text-c mt-3">
+                        <p class="text-muted fs-sm mb-0">&copy; 2026 <a href="https?//makostech.me" target="_blank"
+                                class="text-decoration-none">Makos techs</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://cdn.jslivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
